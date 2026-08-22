@@ -18,7 +18,7 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 ## 0. GitHub 세팅 (가장 먼저 진행)
 
 - [x] GitHub 리포지토리 생성 (public — timonPark/cosmetics-ecommerce)
-- [x] 기본 브랜치 전략 정하기 (`main` 단일 브랜치로 시작)
+- [x] 기본 브랜치 전략 정하기 (`main` ← `dev` ← `feature/#이슈번호-작업명`)
 
 ### 0-1. 이슈 관리 세팅
 
@@ -63,7 +63,7 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 - [x] Supabase 프로젝트 생성 (DB + Auth)
 - [x] Drizzle 스키마 작성 및 Supabase Postgres 연결 (Session pooler)
 - [x] Cloudflare R2 버킷 생성 및 API 키 발급
-- [ ] 이미지 업로드 파이프라인 구현 (sharp 리사이즈/WebP 변환 → R2 업로드)
+- [x] 이미지 업로드 파이프라인 구현 (sharp 리사이즈/WebP 변환 → R2 업로드)
 
 ## 3. 크롤링 데이터 설계 및 마이그레이션
 

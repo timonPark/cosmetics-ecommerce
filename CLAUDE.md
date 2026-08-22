@@ -30,6 +30,15 @@ src/
   db/             # Drizzle 스키마 및 마이그레이션
 ```
 
+## 작업 프로세스 규칙
+
+1. **마크다운 명세서는 330줄 제한**: 330줄이 넘어가면 파일을 분할한다.
+2. **모든 작업은 이슈 → 브랜치 → PR 흐름을 따른다**:
+   - GitHub에 이슈 생성
+   - 해당 이슈 기반으로 브랜치 생성 (예: `feature/#1-product-list`)
+   - 작업 완료 후 commit → push → PR 생성
+   - PR 검토 후 main에 머지
+
 ## 코딩 규칙
 
 - 컴포넌트: PascalCase (예: `ProductCard.tsx`)

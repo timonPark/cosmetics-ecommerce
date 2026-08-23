@@ -45,3 +45,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 *.png
+
+# work history
+/work_history

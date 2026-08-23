@@ -19,56 +19,44 @@
 | 이미지 처리 | sharp (리사이즈 + WebP 변환) |
 | 배포 | Vercel |
 
-## 폴더 구조
+## 폴더 구조 및 레이어
 
-```
-src/
-  app/            # App Router 페이지 및 레이아웃
-  components/     # 공통 컴포넌트
-    ui/           # shadcn/ui 컴포넌트
-  lib/            # 유틸리티, DB 클라이언트, 헬퍼
-  db/             # Drizzle 스키마 및 마이그레이션
-```
+@docs/folder-structure.md
 
 ## 작업 프로세스 규칙
 
-1. **마크다운 명세서는 330줄 제한**: 330줄이 넘어가면 파일을 분할한다.
+1. **마크다운 명세서는 330줄 제한**: 330줄이 넘어가면 `@파일경로` 방식으로 분리한다.
 
 2. **브랜치 전략**:
    ```
-   main          # 프로덕션 배포 브랜치 (직접 커밋 금지)
-   └── dev       # 기본 브랜치, 개발 통합
-       └── feature/#이슈번호-작업명  # 실제 작업 브랜치
+   main                           # 프로덕션 배포 브랜치 (직접 커밋 금지)
+   └── dev                        # 기본 브랜치, 개발 통합
+       ├── feature/#이슈번호-작업명  # 기능 개발 브랜치
+       └── hotfix/#이슈번호-작업명   # 프로덕션 긴급 수정 브랜치 (main 기반)
    ```
+   - `feature/` 브랜치: 모든 일반 작업 (feat, fix, refactor, docs, chore, perf)
+   - `hotfix/` 브랜치: 프로덕션(main) 긴급 수정 시에만 사용. main 기반으로 생성 후 main·dev 양쪽에 머지
+   - 브랜치명 예시: `feature/#15-product-service`, `hotfix/#22-image-upload-fix`
 
 3. **작업 흐름 (모든 작업에 적용)**:
    - GitHub에 이슈 생성
    - `dev` 기반으로 feature 브랜치 생성: `git checkout -b feature/#이슈번호-작업명 dev`
+   - **브랜치 생성 즉시** `work_history/YYYY-MM-DD-{브랜치명}.md` 파일 생성 후 작업 내용 기록 시작
    - 작업 완료 후 commit → push
    - `dev` ← feature 브랜치로 PR 생성 + `closes #이슈번호` 표기
    - PR 검토 후 dev에 머지
+   - 머지 완료 후 해당 `work_history` 파일에 PR URL 및 머지 완료일 업데이트
    - 배포 시 `main` ← `dev` PR 생성 후 머지
 
-## 코딩 규칙
+4. **work_history 규칙**:
+   - 위치: 프로젝트 루트 `work_history/` 폴더 (`.gitignore` 처리 — 로컬 전용)
+   - 파일명: `YYYY-MM-DD-{브랜치명}.md`
+   - 모든 작업(이슈, 브랜치, 코드 변경, 결정 사항)을 빠짐없이 기록
+   - **파일 구조 및 작성 방법은 반드시 [`docs/work-history-spec.md`](docs/work-history-spec.md)를 참고할 것**
 
-- 컴포넌트: PascalCase (예: `ProductCard.tsx`)
-- 파일/폴더: kebab-case (예: `product-list/`)
-- 변수/함수: camelCase
-- 서버 컴포넌트 우선, 클라이언트 컴포넌트는 `"use client"` 명시
-- 이미지는 반드시 Next.js `<Image>` 컴포넌트 사용
+## 코딩 규칙 및 스타일
 
-## 커밋 메시지 규칙
-
-```
-feat: 새 기능
-fix: 버그 수정
-chore: 설정/도구 변경
-docs: 문서 변경
-refactor: 리팩토링
-style: 스타일(UI) 변경
-```
-
-이슈 연결: 커밋/PR에 `closes #이슈번호` 표기 → 머지 시 이슈 자동 닫힘
+@docs/coding-standards.md
 
 ## 환경 변수
 

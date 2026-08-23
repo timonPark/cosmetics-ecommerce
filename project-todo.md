@@ -49,7 +49,7 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 ### 1-1. CLAUDE.md 및 개발 규칙 문서 작성
 
 - [x] CLAUDE.md 작성 (프로젝트 개요, 기술 스택, 폴더 구조, 코딩/커밋 규칙 요약)
-- [ ] 개발 규칙 문서 작성 (네이밍 컨벤션, 폴더/파일 구조, 커밋 메시지 규칙 등 CLAUDE.md에 다 담기 어려운 세부 규칙)
+- [x] 개발 규칙 문서 작성 — docs/folder-structure.md, docs/coding-standards.md, docs/work-history-spec.md로 분리 작성 (PR #14, closes #13)
 
 ### 1-2. Claude Skill 생성
 
@@ -57,6 +57,10 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 - [ ] 프론트엔드 개발 스킬 작성 (컴포넌트 작성 규칙, shadcn/Tailwind 활용 패턴, 피그마 디자인 반영 규칙)
 - [ ] 백엔드 개발 스킬 작성 (API Route/Server Action 패턴, Drizzle 쿼리 규칙, Supabase Auth 연동, R2 업로드/에러 핸들링 규칙)
 - [ ] 개발 하네스 스킬 작성 — 상세 내용은 추후 정리 (TBD: 빌드/타입체크/테스트 검증, 커밋 전 체크리스트 등 작업 프로세스 규칙)
+- [x] `/brainstorm` 스킬 작성 — 아이디어→설계 브레인스토밍 (PR #14)
+- [x] `/write-plan` 스킬 작성 — 구현 계획 작성 (PR #14)
+- [x] `/tdd-be` 스킬 작성 — BE TDD (Service 단위 + Repository 통합) (PR #14)
+- [x] `/tdd-fe` 스킬 작성 — FE TDD (Component + Hook 코로케이션) (PR #14)
 - [ ] 테스트 환경 세팅 — Jest + React Testing Library 설치 및 설정 (BE 단위/통합 테스트, FE 컴포넌트/훅 테스트, TEST_DATABASE_URL 환경변수 세팅)
 
 ## 2. 데이터/백엔드 세팅

@@ -25,7 +25,7 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 - [x] Issue 라벨 설정 (`setup`, `feature`, `bug`, `design`, `infra`, `data`)
 - [x] Issue 템플릿 설정 (기능 요청/버그 리포트)
 - [x] 마일스톤 4개 생성 (`v0.1 - 인프라 세팅`, `v0.2 - 핵심 기능`, `v0.3 - 배포/점검`, `v1.0 - 오픈`)
-- [ ] Issue Fields 설정 확인 (Priority/Effort/Start date/Target date 기본 제공, 필요 시 커스텀 필드 추가)
+- [x] Issue Fields 설정 확인 (Priority/Effort/Start date/Target date 기본 제공, 필요 시 커스텀 필드 추가) — GitHub Project 생성 (timonPark/projects/11), 오픈 이슈 5개 추가, 누락 라벨·마일스톤 정리
 - [x] 커밋/PR에서 `closes #이슈번호` 표기 규칙 정하기 (머지 시 이슈 자동 닫힘)
 
 ### 0-2. 현재 To-Do 리스트를 GitHub Issue로 등록

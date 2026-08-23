@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "jest --passWithNoTests --testPathPatterns='(__tests__/unit|src)'",
+    "test:unit": "jest --passWithNoTests __tests__/unit",
+    "test:integration": "jest --passWithNoTests __tests__/integration",
+    "test:fe": "jest --passWithNoTests src",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1116.0",

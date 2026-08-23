@@ -52,7 +52,9 @@
    - 위치: 프로젝트 루트 `work_history/` 폴더 (`.gitignore` 처리 — 로컬 전용)
    - 파일명: `YYYY-MM-DD-{브랜치명}.md`
    - 모든 작업(이슈, 브랜치, 코드 변경, 결정 사항)을 빠짐없이 기록
-   - **파일 구조 및 작성 방법은 반드시 [`docs/work-history-spec.md`](docs/work-history-spec.md)를 참고할 것**
+   - **파일 구조 및 작성 방법은 반드시 아래 스펙을 참고할 것**
+
+@docs/work-history-spec.md
 
 ## 코딩 규칙 및 스타일
 

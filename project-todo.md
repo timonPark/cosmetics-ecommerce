@@ -61,7 +61,7 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 - [x] `/write-plan` 스킬 작성 — 구현 계획 작성 (PR #14)
 - [x] `/tdd-be` 스킬 작성 — BE TDD (Service 단위 + Repository 통합) (PR #14)
 - [x] `/tdd-fe` 스킬 작성 — FE TDD (Component + Hook 코로케이션) (PR #14)
-- [ ] 테스트 환경 세팅 — Jest + React Testing Library 설치 및 설정 (BE 단위/통합 테스트, FE 컴포넌트/훅 테스트, TEST_DATABASE_URL 환경변수 세팅)
+- [x] 테스트 환경 세팅 — Jest + React Testing Library 설치 및 설정 (BE 단위/통합 테스트, FE 컴포넌트/훅 테스트, TEST_DATABASE_URL 환경변수 세팅) (PR #16, closes #15)
 
 ## 2. 데이터/백엔드 세팅
 

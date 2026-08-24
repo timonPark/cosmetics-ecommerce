@@ -48,3 +48,6 @@ next-env.d.ts
 
 # work history
 /work_history
+
+# 크롤링 원본 데이터 (로컬 전용)
+data/

@@ -50,7 +50,7 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 
 - [x] CLAUDE.md 작성 (프로젝트 개요, 기술 스택, 폴더 구조, 코딩/커밋 규칙 요약)
 - [x] 개발 규칙 문서 작성 — docs/folder-structure.md, docs/coding-standards.md, docs/work-history-spec.md로 분리 작성 (PR #14, closes #13)
-- [ ] README.md 작성 (프로젝트 소개, 기술 스택, 로컬 실행 방법)
+- [x] README.md 작성 (프로젝트 소개, 기술 스택, 로컬 실행 방법) (PR #26, closes #25)
 
 ### 1-2. Claude Skill 생성
 

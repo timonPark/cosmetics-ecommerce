@@ -20,11 +20,11 @@
 - 단계별 커밋 (사용자 승인 후)
 - ▶ [환경 설정] 시작 / ✅ [환경 설정] 완료 출력
 
-## Step 4 — review 스킬 실행
+## Step 4 — codex-review 스킬 실행
 
-- `.claude/commands/review.md` Read 후 직접 실행
+- `.claude/commands/codex-review.md` Read 후 직접 실행
 - 변경된 설정 파일 대상으로 리뷰 실행
-- ▶ [리뷰] 시작 / ✅ [리뷰] 리뷰 결과 수신 완료
+- ▶ [codex-review] 시작 / ✅ [codex-review] 리뷰 결과 수신 완료
 
 ## Step 5 — 리뷰 검토 및 반영
 

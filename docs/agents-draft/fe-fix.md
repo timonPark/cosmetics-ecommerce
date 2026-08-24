@@ -16,11 +16,11 @@
 - 수정 범위 최소화
 - ▶ [fe-dev] 수정 시작 / ✅ [fe-dev] 수정 완료 출력
 
-## Step 3 — review 스킬 실행
+## Step 3 — codex-review 스킬 실행
 
-- `.claude/commands/review.md` Read 후 직접 실행
+- `.claude/commands/codex-review.md` Read 후 직접 실행
 - 변경된 파일 대상으로 코드 리뷰 실행
-- ▶ [코드 리뷰] 시작 / ✅ [코드 리뷰] 리뷰 결과 수신 완료
+- ▶ [codex-review] 시작 / ✅ [codex-review] 리뷰 결과 수신 완료
 
 ## Step 4 — 코드 리뷰 검토 및 반영
 

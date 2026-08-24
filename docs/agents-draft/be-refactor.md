@@ -20,11 +20,11 @@
 - 기능 변경 없이 구조만 변경, 단계별 커밋
 - ▶ [be-dev] 시작 / ✅ [be-dev] 리팩토링 완료 출력
 
-## Step 4 — review 스킬 실행
+## Step 4 — codex-review 스킬 실행
 
-- `.claude/commands/review.md` Read 후 직접 실행
+- `.claude/commands/codex-review.md` Read 후 직접 실행
 - 변경된 파일 대상으로 코드 리뷰 실행
-- ▶ [코드 리뷰] 시작 / ✅ [코드 리뷰] 리뷰 결과 수신 완료
+- ▶ [codex-review] 시작 / ✅ [codex-review] 리뷰 결과 수신 완료
 
 ## Step 5 — 코드 리뷰 검토 및 반영
 

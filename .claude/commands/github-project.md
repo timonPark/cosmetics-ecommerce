@@ -111,7 +111,24 @@ git checkout -b feature/#이슈번호-작업명 dev
 
 ---
 
-## 5. 작업 흐름 체크리스트
+## 5. GitHub Project Status 규칙
+
+GitHub Project(timonPark/projects/11)의 Status 필드를 작업 단계에 맞게 업데이트한다.
+
+| Status | 설정 시점 |
+|--------|-----------|
+| `Todo` | 이슈 생성 시 (기본값) |
+| `In Progress` | feature 브랜치 생성 후 작업 시작 시 |
+| `Done` | PR 머지 완료 시 |
+
+**규칙**:
+- 이슈를 GitHub Project에 추가할 때 Status는 `Todo`로 설정한다
+- 브랜치를 생성하고 작업을 시작하면 즉시 `In Progress`로 변경한다
+- PR이 dev에 머지되면 `Done`으로 변경한다
+
+---
+
+## 6. 작업 흐름 체크리스트
 
 GitHub 작업을 시작할 때 아래 순서를 그대로 따른다.
 
@@ -119,6 +136,7 @@ GitHub 작업을 시작할 때 아래 순서를 그대로 따른다.
 
 - [ ] GitHub에 이슈 생성 (제목 포맷, 라벨, 마일스톤 지정)
 - [ ] 상위 이슈가 있으면 Sub-issue로 연결
+- [ ] GitHub Project에서 이슈 Status → `In Progress` 로 변경
 - [ ] `dev` 기반으로 feature 브랜치 생성
 - [ ] 브랜치 생성 즉시 `work_history/YYYY-MM-DD-{브랜치명}.md` 파일 생성 및 기록 시작
 
@@ -133,6 +151,7 @@ GitHub 작업을 시작할 때 아래 순서를 그대로 따른다.
 - [ ] PR 제목: 커밋 메시지와 동일한 포맷
 - [ ] PR 본문에 `closes #이슈번호` 표기
 - [ ] `dev` ← feature 브랜치 방향으로 PR 생성
+- [ ] PR 머지 완료 후 GitHub Project Status → `Done` 으로 변경
 - [ ] PR 머지 완료 후 work_history 파일에 PR URL 및 머지 완료일 업데이트
 
 ### hotfix (프로덕션 긴급 수정 시만)

@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 화장품 이커머스
 
-## Getting Started
+특정 화장품 브랜드의 상품을 소개하는 이커머스 서비스. 상품 목록/상세 조회, 장바구니, 주문, 관리자 기능을 제공한다.
 
-First, run the development server:
+## 기술 스택
+
+| 영역 | 기술 |
+|------|------|
+| 프레임워크 | Next.js 15 (App Router) |
+| UI | Tailwind CSS + shadcn/ui |
+| ORM | Drizzle |
+| DB / 인증 | Supabase (Postgres + Auth) |
+| 이미지 저장 | Cloudflare R2 |
+| 이미지 처리 | sharp (리사이즈 + WebP 변환) |
+| 배포 | Vercel |
+
+## 로컬 실행 방법
+
+### 사전 요구사항
+
+- Node.js 20+
+- pnpm
+
+### 1. 저장소 클론
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/timonPark/cosmetics-ecommerce.git
+cd cosmetics-ecommerce
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. 패키지 설치
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. 환경 변수 설정
 
-## Learn More
+프로젝트 루트에 `.env.local` 파일을 생성하고 아래 값을 채운다.
 
-To learn more about Next.js, take a look at the following resources:
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+SUPABASE_DB_PASSWORD=
+DATABASE_URL=
+R2_ACCOUNT_ID=
+R2_ACCESS_KEY_ID=
+R2_SECRET_ACCESS_KEY=
+R2_BUCKET_NAME=
+R2_ENDPOINT=
+R2_PUBLIC_URL=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. 개발 서버 실행
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm dev
+```
 
-## Deploy on Vercel
+[http://localhost:3000](http://localhost:3000) 에서 확인한다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 프로젝트 관리
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub Project: [timonPark/projects/11](https://github.com/users/timonPark/projects/11)

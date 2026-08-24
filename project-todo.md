@@ -75,7 +75,8 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 
 > 크롤링해둔 특정 브랜드 사이트의 상품 사진·메타정보를 서비스 DB/스토리지로 옮기는 작업입니다.
 
-- [ ] 크롤링한 메타정보 필드 정리 (상품명, 가격, 카테고리, 옵션, 성분 등) 및 우리 서비스 스키마와 매핑표 작성
+- [x] 크롤링 데이터 정제 — 메타정보 필드 확정(product_code·name·price·volume·images), 이미지 분류(상품/상세), 오류 파일 312개 삭제, `manifest_classified.json`·`products_classified.csv` 생성 (`scripts/classify-crawled-images.py`)
+- [ ] 정제된 크롤링 데이터를 cosmetics-ecommerce 프로젝트로 이관 및 Drizzle 스키마 반영 (이미지 R2 업로드, 메타정보 Supabase 마이그레이션 스크립트 작성)
 - [ ] 매핑 결과를 바탕으로 Drizzle 스키마 확정/조정 (2단계 스키마 작업과 연결)
 - [ ] 크롤링 이미지를 sharp 파이프라인으로 리사이즈 + WebP 변환 후 R2 업로드
 - [ ] 메타정보 마이그레이션 스크립트 작성 (크롤링 원본 → Supabase Postgres)

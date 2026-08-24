@@ -57,7 +57,7 @@ To-Do의 0~6단계를 4개 마일스톤으로 묶어서 관리합니다. 각 섹
 - [x] GitHub 프로젝트 관리 스킬 작성 (라벨/마일스톤/이슈-하위이슈 등록 규칙, 0-1·0-2단계 규칙을 스킬로 문서화) (PR #18, closes #17)
 - [x] 프론트엔드 개발 스킬 작성 (컴포넌트 작성 규칙, shadcn/Tailwind 활용 패턴, 피그마 디자인 반영 규칙) (PR #22, closes #21)
 - [x] 백엔드 개발 스킬 작성 (API Route/Server Action 패턴, Drizzle 쿼리 규칙, Supabase Auth 연동, R2 업로드/에러 핸들링 규칙) (PR #24, closes #23)
-- [ ] 개발 하네스 스킬 작성 — 상세 내용은 추후 정리 (TBD: 빌드/타입체크/테스트 검증, 커밋 전 체크리스트 등 작업 프로세스 규칙)
+- [x] 개발 하네스 스킬 작성 — dev-harness 오케스트레이터 + 10개 에이전트 + codex-review 교차 검증 (PR #28, closes #27)
 - [x] `/brainstorm` 스킬 작성 — 아이디어→설계 브레인스토밍 (PR #14)
 - [x] `/write-plan` 스킬 작성 — 구현 계획 작성 (PR #14)
 - [x] `/tdd-be` 스킬 작성 — BE TDD (Service 단위 + Repository 통합) (PR #14)

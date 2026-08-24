@@ -81,6 +81,10 @@ description: "GitHub 이슈/라벨/마일스톤/하위이슈 등록 및 브랜�
 - **기능 요청 템플릿**: `feature`, `setup`, `design`, `infra`, `data` 라벨 이슈
 - **버그 리포트 템플릿**: `bug` 라벨 이슈
 
+### 3-4. Assignees 지정
+
+이슈 생성 시 반드시 작업 담당자를 Assignees에 지정한다. 담당자 미지정 금지.
+
 ---
 
 ## 4. 브랜치-이슈 연결 규칙
@@ -117,12 +121,12 @@ GitHub Project(timonPark/projects/11)의 Status 필드를 작업 단계에 맞�
 
 | Status | 설정 시점 |
 |--------|-----------|
-| `Todo` | 이슈 생성 시 (기본값) |
+| `Todo` | 이슈 생성 직후 Project에 추가할 때 (기본값) |
 | `In Progress` | feature 브랜치 생성 후 작업 시작 시 |
 | `Done` | PR 머지 완료 시 |
 
 **규칙**:
-- 이슈를 GitHub Project에 추가할 때 Status는 `Todo`로 설정한다
+- 이슈를 생성한 직후 반드시 GitHub Project에 추가한다. Status는 `Todo`로 설정한다.
 - 브랜치를 생성하고 작업을 시작하면 즉시 `In Progress`로 변경한다
 - PR이 dev에 머지되면 `Done`으로 변경한다
 
@@ -134,7 +138,8 @@ GitHub 작업을 시작할 때 아래 순서를 그대로 따른다.
 
 ### 작업 시작
 
-- [ ] GitHub에 이슈 생성 (제목 포맷, 라벨, 마일스톤 지정)
+- [ ] GitHub에 이슈 생성 (제목 포맷, 라벨, 마일스톤, Assignees 지정)
+- [ ] 이슈 생성 직후 GitHub Project(timonPark/projects/11)에 추가 (Status: `Todo`)
 - [ ] 상위 이슈가 있으면 Sub-issue로 연결
 - [ ] GitHub Project에서 이슈 Status → `In Progress` 로 변경
 - [ ] `dev` 기반으로 feature 브랜치 생성

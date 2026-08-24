@@ -141,9 +141,9 @@ GitHub 작업을 시작할 때 아래 순서를 그대로 따른다.
 - [ ] GitHub에 이슈 생성 (제목 포맷, 라벨, 마일스톤, Assignees 지정)
 - [ ] 이슈 생성 직후 GitHub Project(timonPark/projects/11)에 추가 (Status: `Todo`)
 - [ ] 상위 이슈가 있으면 Sub-issue로 연결
-- [ ] GitHub Project에서 이슈 Status → `In Progress` 로 변경
-- [ ] `dev` 기반으로 feature 브랜치 생성
+- [ ] `dev` 기반으로 feature 브랜치 생성 — **⛔ 이 단계를 건너뛰지 않는다**
 - [ ] 브랜치 생성 즉시 `work_history/YYYY-MM-DD-{브랜치명}.md` 파일 생성 및 기록 시작
+- [ ] GitHub Project에서 이슈 Status → `In Progress` 로 변경
 
 ### 작업 중
 
